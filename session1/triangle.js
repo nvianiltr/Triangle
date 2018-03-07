@@ -13,9 +13,21 @@ window.onload = function init()
     // Three Vertices
     
     var vertices = [
-        vec2( -1, -1 ),
-        vec2(  0,  1 ),
-        vec2(  1, -1 )
+        // vec2( -1, -1 ),
+        // vec2(  0,  1 ),
+        // vec2(  1, -1 ),
+    
+        -1,-1,
+        -0.6,-0.3,
+        -0.2,-1,
+
+        -0.6,-0.3,
+        -0.2, 0.4,
+        0.2, -0.3,
+
+        -0.2, -1,
+        0.2, -0.3,
+        0.6,-1
     ];
 
     //
@@ -47,5 +59,5 @@ window.onload = function init()
 
 function render() {
     gl.clear( gl.COLOR_BUFFER_BIT );
-    gl.drawArrays( gl.TRIANGLES, 0, 3 );
+    gl.drawArrays( gl.TRIANGLES, 0, 9 );
 }
